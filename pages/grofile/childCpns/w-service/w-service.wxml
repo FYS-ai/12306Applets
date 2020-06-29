@@ -1,0 +1,59 @@
+<!--pages/grofile/childCpns/w-service/w-service.wxml-->
+  <view class="Viewlist">
+    <view class="ViewlistItem">
+      <image class="iconImg" src="/assets/images/icon/treasure.png"/>
+      <view class="wdcfjfb">
+        <view class="wdcftitles">我的财富</view>
+        <view class="">0个加速包</view>
+      </view>
+    </view>
+    <view class="jtRight">
+      <text class="zxkf">领取加速包</text>
+      ></view>
+  </view>
+
+  <view class="Viewlist">
+    <view class="ViewlistItem">
+      <image class="iconImg" src="/assets/images/icon/trip.png"/>
+      <view class="wdcf">出行服务</view>
+    </view>
+    <view class="jtRight">
+      <text class="zxkf">正晚点/时刻表</text>
+      ></view>
+  </view>
+
+  <view class="Viewlist">
+    <view class="ViewlistItem">
+      <image class="iconImg" src="/assets/images/icon/invite.png"/>
+      <view class="wdcf">邀请好友</view>
+    </view>
+    <view class="jtRight">
+      <text class="zxkf">一起来抢票</text>
+      ></view>
+  </view>
+
+  <view class="Viewlist">
+    <view class="ViewlistItem">
+      <image class="iconImg" src="/assets/images/icon/message.png"/>
+      <view class="wdcf">消息中心</view>
+    </view>
+    <view class="jtRight">
+      <text class="zxkf">在线客服</text>
+      ></view>
+  </view>
+
+  <view class="Viewlist">
+    <view class="ViewlistItem">
+      <image class="iconImg" src="/assets/images/icon/advise.png"/>
+      <view class="wdcf">产品意见</view>
+    </view>
+    <view class="jtRight">></view>
+  </view>
+
+  <view class="Viewlist">
+    <view class="ViewlistItem">
+      <image class="iconImg" src="/assets/images/icon/more.png"/>
+      <view class="wdcf">更多</view>
+    </view>
+    <view class="jtRight">></view>
+  </view>

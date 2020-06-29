@@ -1,0 +1,174 @@
+/* pages/home/childCpns/w-application/childCpns/w-hotelDetail/w-hotelDetail.wxss */
+.hotelItem{
+  position: relative;
+  top: -32px;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+.nameAddress{
+  margin: 10px 0 0 10px;
+padding-top: 10px;
+
+}
+.nameAddress .hotelName{
+  font-size: 17px;
+font-weight: 600;
+
+}
+.opening{
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+.roomTypesList{
+  display: flex;
+  justify-content: space-around;
+  /* */
+  /* padding: 10px; */
+  /* height: 120px; */
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  border-radius: 4px;
+  
+}
+.roomTypesList image{
+  height: 100px;
+width: 100px;
+border-radius: 4px;
+
+}
+/* .title{
+  font-size: 16px;
+  font-weight: 600;
+
+} */
+/* .price{
+  font-size: 19px;
+color: red;
+font-weight: 600;
+text-align: right;
+
+} */
+/* .ZXYD{
+  height: 29px;
+  border: 1px solid red;
+  line-height: 30px;
+  width: 108px;
+  text-align: center;
+  background: red;
+  color: white;
+  border-radius: 19px;
+  font-size: 14px;
+
+} */
+.hrdInfoItem{
+  font-size: 14px;
+}
+.roomsList{
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  height: 120px;
+  align-items: center;
+  border: 1px solid rgb(209, 206, 206);
+  border-radius: 4px;
+
+}
+.BBP{
+  margin-left: 10px;
+
+}
+.breakfast{
+  margin-bottom: 3px;
+
+}
+.roomsPrice{
+  font-size: 18px;
+font-weight: 600;
+color: red;
+margin-top: 5px;
+
+}
+.ZXZFYU{
+  width: 75px;
+border: 1px solid red;
+text-align: center;
+border-radius: 10px;
+
+}
+.YD{
+  height: 30px;
+  line-height: 30px;
+  background: red;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px 8px 0 0;
+
+}
+.ZF{
+  font-size: 14px;
+  color: red;
+
+}
+.PLLB{
+  font-size: 17px;
+width: 95%;
+margin: auto;
+font-weight: 600;
+margin-top: -17px;
+
+}
+.PLLBXX{
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+  
+
+}
+.RWXX{
+  display: flex;
+
+}
+.TX{
+  width: 50px;
+height: 50px;
+border-radius: 50%;
+
+}
+.UserName{
+  margin-left: 10px;
+
+}
+.RM{
+  font-size: 17px;
+margin-bottom: 5px;
+
+}
+.SJ{
+  font-size: 13px;
+color: rgb(172, 169, 169);
+}
+.TPXX{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.TPLBXX{
+  height: 100px;
+  width: 30%;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-top: 5px;
+  
+  
+}
+.PLSJJ{
+  font-size: 14px;
+  color: rgb(172, 169, 169);
+  margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "w-tranOrder":"./childCpns/w-tranOrder/w-tranOrder"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-swiper":"../../components/w-swiper/w-swiper",
+    "w-website":"../home/childCpns/w-website/w-website"
+  }
+}

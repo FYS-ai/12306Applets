@@ -1,0 +1,6 @@
+<!--pages/home/childCpns/w-bannerLogon/w-bannerLogon.wxml-->
+<view class="banner-login">
+  <w-swiper list="{{img}}" sheight="100px"/>
+  <!-- <image mode="widthFix" wx:for="{{img}}"
+    src="{{item}}"/> -->
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-bannerLogon":"./childCpns/w-bannerLogon/w-bannerLogon",
+    "w-website":"./childCpns/w-website/w-website",
+    "w-application":"./childCpns/w-application/w-application",
+    "w-mySlot":"./childCpns/w-mySlot/w-mySlot"
+  }
+}

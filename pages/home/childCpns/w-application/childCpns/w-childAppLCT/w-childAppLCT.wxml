@@ -1,0 +1,78 @@
+<!--pages/home/childCpns/w-application/childCpns/w-childAppLCT/w-childAppLCT.wxml-->
+<view class="">
+  <view class="" wx:if="{{detailItem==0}}">
+    <w-website titles="{{titles}}"
+    formatTimeList="{{formatTimeList}}"
+    isIconClear2="{{isIconClear}}"
+    bind:websiteHCFJClick="HCFJClick"
+    bind:websiteksClick="ksClick"
+    bind:websitezdClick="zdClick"
+    bind:websiteImg1="websiteImgClick1"
+    bind:websiteImg2="websiteImgClick2"
+    bind:wClearClick="ClearClick">
+      <w-mySlot/>
+    </w-website>
+  </view>
+
+  <view class="" wx:elif="{{detailItem==1}}">
+    <w-website titles="{{JP}}"
+    formatTimeList="{{formatTimeList}}"
+    isIconClear2="{{isIconClear}}"
+    bind:websiteHCFJClick="HCFJClick"
+    bind:websiteksClick="ksClick"
+    bind:websitezdClick="zdClick"
+    bind:websiteImg1="websiteImgClick1"
+    bind:websiteImg2="websiteImgClick2"
+    bind:wClearClick="ClearClick">
+      
+    </w-website>
+  </view>
+
+  <view  wx:elif="{{detailItem==2}}">
+    <w-hotel class="wHotel" hotelList="{{hotelList.list}}"
+    bind:hotelClick="hotelDetailClick"/>
+  </view>
+
+  <view class="" wx:elif="{{detailItem==3}}">
+    <w-website titles="{{CP}}"
+    formatTimeList="{{formatTimeList}}"
+    isIconClear2="{{isIconClear}}"
+    bind:websiteHCFJClick="HCFJClick"
+    bind:websiteksClick="ksClick"
+    bind:websitezdClick="zdClick"
+    bind:websiteImg1="websiteImgClick1"
+    bind:websiteImg2="websiteImgClick2"
+    bind:wClearClick="ClearClick"/>
+    
+  </view>
+
+  <view class="" wx:elif="{{detailItem==6}}">
+    <w-mapLocation/>
+  </view>
+
+  <view wx:else="{{detailItem==7}}">
+    <view class="ddddd">
+    <view class="WNTJ">{{WNTJ}}</view>
+      <view class="appLCT1">
+        <view class="appLCT1item" wx:for="{{appLCT1}}" wx:key="appLCT1Key"
+          wx:for-index="appLCT1Index">
+            <image class="applctImg" src="{{item}}"/>
+            <view class="titlesAPPLCT">
+              {{appTitles1[appLCT1Index]}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="ddddd">
+      <view class="WNTJ">{{CXFW}}</view>
+        <view class="appLCT1">
+          <view class="appLCT1item" wx:for="{{appLCT2}}" wx:key="appLCT1Key"
+            wx:for-index="appLCT2Index">
+              <image class="applctImg" src="{{item}}"/>
+              <view class="titlesAPPLCT" >
+                {{appTitles2[appLCT2Index]}}</view>
+          </view>
+        </view>
+    </view>
+  </view>
+  <w-back-top wx:if="{{isBackTop}}"/>
+</view>

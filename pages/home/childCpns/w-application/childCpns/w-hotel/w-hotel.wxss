@@ -1,0 +1,55 @@
+/* pages/home/childCpns/w-application/childCpns/w-hotel/w-hotel.wxss */
+.hotelList{
+
+width: 48%;
+font-size: 14px;
+border-radius: 4px;
+background: rgb(243, 237, 237);
+border: 1px solid white;
+margin-top: 10px;
+padding-bottom: 10px;
+}
+.holet-img{
+  width: 100%;
+  height: 176px;
+  border-radius: 4px 4px 0 0;
+
+}
+.NSLP{
+  background-color: rgba(248, 246, 246, 0.692);
+}
+.NSLP .name{
+  margin-left: 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 600;
+  width: 95%;
+}
+.SL .score{
+  color: blue;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+.priceText .price{
+  font-size: 18px;
+  color: red;
+  margin: 0 3px 2px 5px;
+
+}
+.priceText .stardesc{
+  margin-left: 10px;
+  background: red;
+  color: white;
+  box-sizing: box;
+  font-size: 13px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  height: 19px;
+  line-height: 19px;
+
+
+}

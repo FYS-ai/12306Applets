@@ -1,0 +1,35 @@
+<!--pages/grofile/childCpns/w-acman/childCpns/w-crud/w-crud.wxml-->
+<view class="">
+  <view class="personalDetail perDetail">
+    <view class="pdLeft">头像</view>
+    <view class="pdRight">
+      <image class="pdImg" src="{{detailItem.avatarUrl}}"/>
+      <text class="pdjt">></text>
+    </view>
+  </view>
+
+  <view class="personalDetail">
+    <view class="pdLeft">呢称</view>
+    <view class="pdRight">
+      <text class="textItem">{{detailItem.nickName}}</text>
+      <text class="pdjt">></text>
+    </view>
+  </view>
+
+  <view class="personalDetail">
+    <view class="pdLeft">性别</view>
+    <view class="pdRight">
+      <text class="textItem">{{detailItem.gender == 1?'男':'女'}}</text>
+      <text class="pdjt">></text>
+    </view>
+  </view>
+
+  <view class="personalDetail">
+    <view class="pdLeft">城市</view>
+    <view class="pdRight">
+      <text class="textItem">{{detailItem.city}}</text>
+      <text class="pdjt">></text>
+    </view>
+  </view>
+
+</view>

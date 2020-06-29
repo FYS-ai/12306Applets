@@ -1,0 +1,31 @@
+/* pages/home/childCpns/w-mySlot/w-mySlot.wxss */
+.laberItem{
+  display: flex;
+  height:60px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+
+}
+.chooes{
+  justify-content: space-around;
+  border:none;
+}
+.gaotie{
+  padding-left: 10px;
+}
+.cheG{
+  display: flex;
+width: 100%;
+
+}
+.GT{
+  width: 50%;
+display: flex;
+justify-content: center;
+
+}
+.GT .GTItem{
+  margin-right: 10px;
+}

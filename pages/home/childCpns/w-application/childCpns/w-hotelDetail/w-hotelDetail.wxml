@@ -1,0 +1,84 @@
+<!--pages/home/childCpns/w-application/childCpns/w-hotelDetail/w-hotelDetail.wxml-->
+<view class="">
+  <w-swiper list="{{hotelDetailList.images}}"/>
+
+  <view class="hotelItem">
+
+    <view class="">
+      <view class="nameAddress">
+        <text class="hotelName">{{hotelDetailList.hotelName}}</text>
+        <view class="hotelName" >{{hotelDetailList.address}}</view>
+      </view>
+      <view class="opening">{{hotelDetailList.opening}}</view>
+    </view>
+  
+    <view class="">
+
+      <view class="roomTypesList" wx:for="{{roomTypess}}"
+        wx:for-index="rooIndex" wx:key="rooKey">
+           
+            <!-- <view class="">
+              <view class="title">{{item.title}}></view>
+              <view class="" wx:for="{{roomTypesList[rooIndex].hrdInfo}}"
+                wx:for-item="hrdInfoItem" wx:key="hrdInfoKey">
+                <text class="hrdInfoItem">{{hrdInfoItem}}</text>
+              </view>
+            </view> -->
+
+            <!-- <view class="">
+              <view class="price">¥{{roomsItem.price}}</view>
+              <view class="ZXYD" data-index="{{rooIndex}}"
+              bindtap="ZXYDClick">
+              预定选房</view>
+            </view> -->
+
+              <view class="roomsList">
+                <image class="" src="{{item.image}}"/>
+                <view class="BBP"> 
+                  <view class="">
+                    <view class="breakfast">{{roomTypess[rooIndex].rooms[dataNum].breakfast}}</view>
+                    <view class="breakfast">{{roomTypess[rooIndex].rooms[dataNum].bedDesc}}</view>
+                    <view class="breakfast">{{roomTypess[rooIndex].rooms[dataNum].people}}</view>
+                  </view>
+                  <view class="roomsPrice">￥{{roomTypess[rooIndex].rooms[dataNum].price}}</view>
+                </view>
+  
+                <view class="ZXZFYU" bindtap="ZXYDClick"
+                  data-index="{{rooIndex}}"
+                  data-roomsType="{{roomTypess[rooIndex].rooms[dataNum].bedDesc}}"
+                  data-imgUrl="{{item.image}}">
+                  <view class="YD">预定</view>
+                  <view class="ZF">在线支付</view>
+                </view>
+              </view>
+          </view>
+    </view>
+  </view>
+ 
+  <view class="PLLB">评论</view>
+  <block wx:for="{{vassessList}}" wx:for-index="vassessIndex"
+    wx:for-item="vassessItem" wx:key="vassessIndex">
+    <view class="PLLBXX">
+      <view class="RWXX">
+        <image class="TX" src="{{vassessItem.avatarUrl}}"/>
+        <view class="UserName">
+          <view class="RM">{{vassessItem.userName}}</view>
+          <view class="SJ">
+            入住-离开 {{vassessItem.checkIn}} - {{vassessItem.checkOut}}
+          </view>
+        </view>
+      </view>
+
+      <view style="margin-top: 10px;">{{vassessItem.aeContent}}</view>
+
+      <view class="TPXX">
+        <block wx:for="{{vassessItem.imgShowUrl}}" wx:for-index="imgIndex"
+          wx:key="imgIndex" wx-for-item="imgShowItem">
+          <image class="TPLBXX" src="{{vassessItem.imgShowUrl[imgIndex]}}"/>
+        </block>
+      </view>
+      <view class="PLSJJ">评论时间：{{vassessItem.aeTimes}}</view>
+
+    </view>
+  </block>
+</view>

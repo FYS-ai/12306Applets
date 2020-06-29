@@ -1,0 +1,22 @@
+<!--pages/home/childCpns/w-application/childCpns/w-hotel/w-hotel.wxml-->
+<view class="hotelList" wx:for="{{hotelList}}"
+  wx:key="hotelKey"
+  wx:for-index="hotelIndex"
+  data-index="{{hotelIndex}}"
+  bind:tap="hotelDetail">
+  <image class="holet-img" src="{{item.img}}"/>
+  <view class="NSLP">
+    <view class="name">{{item.name}}</view>
+    <view class="SL">
+      <text class="score" >{{item.score}}</text>    
+      <text class="labels" >{{item.labels[0]}}</text>
+      <text class="labels" >{{item.labels[1]}}</text>
+    </view>
+    <view class="priceText" >
+      <text class="price">¥{{item.price}}</text>
+      <text class="qi">起</text>
+      <text class="stardesc" >{{item.stardesc}}</text>
+    </view>
+  </view>
+
+</view>

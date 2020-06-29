@@ -1,0 +1,8 @@
+/* pages/grofile/grofile.wxss */
+
+page{
+  background-color: rgb(235, 232, 232);
+}
+
+
+

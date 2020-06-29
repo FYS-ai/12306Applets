@@ -1,0 +1,21 @@
+<!--pages/grofile/childCpns/w-acman/w-acman.wxml-->
+<view class="myacman" wx:if="{{isLogin}}">
+  <view class="weidl">
+    <image class="hctx" src="/assets/images/hc.png"/>
+    <button open-type="getUserInfo" class="dlzc"
+      bindgetuserinfo="getUserInfo"
+      >登录/注册</button>
+  </view>
+</view>
+<view class="myacman" wx:else>
+  <view class="myLogin"  bindtap="acmanClick">
+      <view class="myLoginItem">
+        <image class="hctx" src="{{avatarUrl}}"/>
+        <view class="myLeft">
+          <view class="mc">{{userName}}</view>
+          <view class="zhgl">账号管理</view>
+        </view>
+      </view>
+      <view class="loginRighr">></view>
+  </view>
+</view>

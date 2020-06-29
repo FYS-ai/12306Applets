@@ -1,0 +1,158 @@
+/* pages/detail/detail.wxss */
+page{
+  background-color: #f1f0f5;
+}
+.date{
+  height: 80rpx;
+  background-color: #5495E6;
+  display: flex;
+  flex-direction: row;
+  }
+  .date view{
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 33rpx;
+    padding-top: 20rpx;
+  }
+  .content{
+    /* height: 1200rpx; */
+    background-color: #F4F4F4;
+    padding-top: 20rpx;
+  }
+  .bg{
+    width: 95%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    }
+    
+    .item{
+      display: flex;
+      flex-direction: row;
+      padding: 20rpx;
+    }
+    .wrApper{
+      width: 25%;
+    }
+    .left{
+      text-align: left;
+    }
+    .conter{
+      text-align: center;
+    }
+    .right{
+      text-align: right;
+    }
+    .blue{
+      color:#5495E6;
+      font-weight: bold;
+      font-size: 32rpx;
+    }
+    .normal{
+      color: #000000;
+      font-weight: bold;
+      font-size: 32rpx;
+    }
+    .small{
+      font-size: 26rpx;
+      color: #666666;
+    }
+    .line{
+      height: 2rpx;
+      background-color: #cccccc;
+      opacity: 0.2;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 6rpx;
+      margin-bottom: 6rpx;
+    }
+    .buy{
+      background-color: transparent;
+      width: 0;
+      height: 0;
+      margin-right: 10rpx;
+      float: right;
+      position: relative;
+      top: 16px;
+      border-top: 10px solid #f00;
+      border-left: 10px solid transparent;
+      transform: rotate(135deg);
+    }
+    /* .Bactive{
+      background-color:#eee;
+      color:rgb(107, 104, 104);
+    } */
+    .hr{
+      height: 2rpx;
+      background-color: #cccccc;
+      opacity: 0.2;
+    }
+    .seat{
+     font-size: 26rpx;
+     display: flex;
+     flex-direction: row;
+     margin-top: 5px;
+     justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    }
+    .seat text{
+      color: red;
+    }
+    .no{
+      color: #999999;
+      margin-right: 20rpx;
+    }
+    .yes{
+      width: 25%;
+      margin-top: 2px;
+      height: 25px;
+      text-align: center;
+
+    }
+.SnaTickList{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+}
+.sss{
+  width: 25%;
+height: 34px;
+line-height: 34px;
+font-size: 15px;
+}
+.seatName,.price{  
+font-weight: 600;
+
+}
+.price{
+  font-size: 16px;
+  color:#f00;
+}
+.seats{
+  color: gray;
+}
+.QP{
+  background: #f00;
+  width: 17%;
+  font-size: 15px;
+  border-radius: 19px;
+  color: white;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 13px;
+  margin-left: 17px;
+  position: relative;
+  top: 5px;
+  
+  
+}
+.NQP{
+  background: gray;
+}
+.Bactive{
+  transform: rotate(-45deg);
+}

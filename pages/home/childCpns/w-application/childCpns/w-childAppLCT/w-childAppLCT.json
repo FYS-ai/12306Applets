@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "w-website":"../../../w-website/w-website",
+    "w-hotel":"../w-hotel/w-hotel",
+    "w-mapLocation":"../w-mapLocation/w-mapLocation",
+    "w-mySlot":"../../../w-mySlot/w-mySlot",
+    "w-back-top":"../../../../../../components/w-back-top/w-back-top"
+  }
+}

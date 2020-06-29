@@ -1,0 +1,94 @@
+/* pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/childCpns/w-PingLunJD/w-PingLunJD.wxss */
+.PJJML{
+  margin-top: 20px;
+
+}
+.PJTitles{
+  display: flex;
+  margin: 4px;
+
+}
+.PJIMG{
+  height: 107px;
+  width: 110px;
+  border-radius: 4px;
+
+}
+.pl{
+  margin: 4px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.PJText{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.neir{
+  margin-top: 10px;
+}
+.inpText{
+  height: 127px;
+  width: 96%;
+  margin: 4px;
+  border: 1px solid #eee;
+
+}
+.teip{
+  height: 100%;
+  width: 100%;
+
+}
+/* .scrollNR{
+  display: flex;
+  margin-top: 10px;
+  width: 50vh;
+  height: 120px;
+  align-items: center;
+} */
+.HDTPSSS{
+  width: 100%;
+}
+.asdaa{
+  display: flex;
+  height: 120px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bigImg,.SCTU{
+  height: 100px;
+  width: 30%;
+  margin: 4px;
+  border-radius: 4px;
+}
+.SCTU{
+  border:1px dashed rgb(97, 96, 96);
+}
+.FBQX{
+  display: flex;
+  justify-content: space-around;
+  margin: 4px;
+  width: 96%;
+  margin-top: 30px;
+
+}
+.FB{
+  width: 77px;
+  border: 1px solid;
+  font-size: 17px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 4px;
+  color:white;
+}
+.DD{
+  background-color: rgb(22, 22, 185);
+}
+.QX{
+  background-color: #e93d3d;
+  
+}

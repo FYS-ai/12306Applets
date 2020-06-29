@@ -1,0 +1,45 @@
+/* pages/grofile/childCpns/w-service/w-service.wxss */
+.Viewlist{
+  display: flex;
+  background: white;
+  height: 57px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+
+}
+
+.ViewlistItem{
+  /* display: flex;
+  flex-direction: column; */
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+.wdcftitles{
+  font-size: 14px;
+}
+.iconImg{
+  width: 20px;
+  height: 20px;
+}
+.wdcfjfb{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.wdcf{
+  margin-left: 10px;
+  font-size: 15px;
+
+}
+.jtRight{
+  font-size: 16px;
+  margin-right: 16px;
+  color: gray;
+
+}
+.zxkf{
+  font-size: 14px;
+}

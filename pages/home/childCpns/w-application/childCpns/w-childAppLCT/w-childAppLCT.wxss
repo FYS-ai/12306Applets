@@ -1,0 +1,38 @@
+/* pages/home/childCpns/w-application/childCpns/w-childAppLCT/w-childAppLCT.wxss */
+page{
+  background-color: #faf8f8;
+}
+.wHotel{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ddddd{
+  margin: 10px;
+  background-color: white;
+  height: 90px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.WNTJ{
+  margin: 3px 0 0 10px;
+}
+.appLCT1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.appLCT1item{
+  text-align: center;
+  width: 20%;
+  font-size: 11px;
+  margin-top: 2%;
+
+}
+.applctImg{
+  width: 20px;
+  height: 20px;
+
+}

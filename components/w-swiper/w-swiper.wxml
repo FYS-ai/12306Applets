@@ -1,0 +1,26 @@
+<!--components/w-swiper/w-swiper.wxml-->
+<!--公共自定义轮播组件-->
+<!--展示轮播图及属性
+  circular="{{true}}"：表示把轮播图重复播放
+  autoplay="{{true}}":设置轮播图自动滚动
+  interval="1000":设置轮播图切换的世间
+  duration="300":设置每一张轮播图滑过的世间
+  indicator-dots="{{true}}"：设置轮播图的指示点
+  indicator-active-color="#ff5777":设置指示点选中的颜色
+-->
+<swiper class="swiperee"
+  circular="{{true}}"
+  autoplay="{{true}}"
+  interval="1000"
+  duration="300"
+  indicator-dots="{{true}}"
+  indicator-active-color="#ff5777"
+  style="height:{{sheight}}"
+>
+    <block wx:for="{{list}}" wx:key="index">
+        <swiper-item class="swiperItem">
+        <!-- mode="widthFix"设置图片自适应页面大小-->
+            <image class="spImg" src="{{item}}" mode="widthFix"/>
+        </swiper-item>
+    </block>
+</swiper>

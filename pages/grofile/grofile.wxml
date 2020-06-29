@@ -1,0 +1,9 @@
+<!--pages/grofile/grofile.wxml-->
+<view class="profile">
+
+  <w-acman />
+
+  <w-ordermang orderImg="{{orderImg}}" orderTitle="{{orderTitle}}"/>
+
+  <w-service/>
+</view>

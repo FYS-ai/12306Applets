@@ -1,0 +1,69 @@
+<!--pages/detail/detail.wxml-->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
+<view class="date">
+  <view bindtap="beforeDay">前一天</view>
+  <view>{{ORGTMN}}</view>
+  <view bindtap="nextDay">后一天</view>
+</view>
+<view class="content" wx:if="{{remark}}">
+  <block wx:for="{{trainList}}" wx:key="tranKey" 
+    wx:for-index="trainListIndex">
+    <view class="bg">
+      <view class="item">
+        <view class="wrApper left">
+          <view class="normal">{{item.arrivalStation}}</view>
+          <view class="blue">{{item.arrivalTime}}</view>
+        </view>
+        <view class="wrApper conter">
+          <view class="normal">{{item.trainNum}}</view>
+          <view class="line"></view>
+          <view class="small">{{filters.toFix((item.runTime)/60)}}时{{filters.toFix((item.runTime)%60)}}分</view>
+        </view>
+        <view class="wrApper right">
+          <view class="normal">{{item.departStation}}</view>
+          <view class="normal">{{item.departTime}}</view>
+        </view>
+        <view class="wrApper right">
+          <view class="buy {{rotateIndex==trainListIndex?'Bactive':''}}"
+            catchtap="snaTickClick"
+            data-index="{{trainListIndex}}"></view>
+        </view>
+      </view>
+      <view class="hr"></view>
+      <view class="seat" >
+        <block wx:for="{{newTicketList[trainListIndex]}}" wx:key="newTLKey"
+          wx:for-item="TicketItem" wx:for-index="TLIndex">
+
+          <view class="yes" wx:if="{{rotateIndex!=trainListIndex}}">
+            {{TicketItem.seatName}}:
+            {{TicketItem.seats}}张
+          </view>
+
+          <view class="SnaTickList" wx:elif="{{rotateIndex==trainListIndex}}">
+            <view class="sss seatName">{{TicketItem.seatName}}</view>
+            <view class="sss price">￥{{TicketItem.price}}</view>
+            <view class="sss seats">{{TicketItem.seats==0 ? '无票':'有票'}}</view>
+            <button class="sss QP"
+            disabled="{{TicketItem.seats==0}}"
+            bindtap="QPButClick"
+              data-tt="{{TLIndex}}"
+              data-seatName="{{TicketItem.seatName}}"
+              data-price="{{TicketItem.price}}"
+              data-filterTime="{{filters.toFix((item.runTime)/60)}}时{{filters.toFix((item.runTime)%60)}}分"
+              data-arrivalStation="{{item.arrivalStation}}"
+              data-departStation="{{item.departStation}}"
+              data-arrivalTime="{{item.arrivalTime}}"
+              data-departTime="{{item.departTime}}"
+              data-trainNum="{{item.trainNum}}">抢票</button>
+          </view>
+        </block>
+      </view>
+     
+    </view>
+    <w-back-top wx:if="{{isBacTop}}"/>
+  </block>
+</view>
+
+<view wx:else>
+  <image src="{{NoTranimg}}" style="width:100%;"/>
+</view>

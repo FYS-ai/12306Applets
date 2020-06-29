@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/plane/plane",
+    "pages/coach/coach",
+    "pages/grofile/grofile",
+    "pages/home/childCpns/w-application/childCpns/w-childAppLCT/w-childAppLCT",
+    "pages/grofile/childCpns/w-acman/childCpns/w-crud/w-crud",
+    "pages/detail/detail",
+    "pages/home/childCpns/w-application/childCpns/w-hotelDetail/w-hotelDetail",
+    "pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/w-orderTotal",
+    "pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/childCpns/w-PingLunJD/w-PingLunJD"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#5495E6",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#5495E6",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "火车票",
+        "iconPath": "/assets/images/tabbar/train.png",
+        "selectedIconPath": "/assets/images/tabbar/train-selected.png"
+      },
+      {
+        "pagePath": "pages/plane/plane",
+        "text": "飞机票",
+        "iconPath": "/assets/images/tabbar/plane.png",
+        "selectedIconPath": "/assets/images/tabbar/plane-selected.png"
+      },
+      {
+        "pagePath": "pages/coach/coach",
+        "text": "汽车票",
+        "iconPath": "/assets/images/tabbar/coach.png",
+        "selectedIconPath": "/assets/images/tabbar/coach-selected.png"
+      },
+      {
+        "pagePath": "pages/grofile/grofile",
+        "text": "个人中心",
+        "iconPath": "/assets/images/tabbar/personnel.png",
+        "selectedIconPath": "/assets/images/tabbar/personnel-selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

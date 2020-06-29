@@ -1,0 +1,61 @@
+/* pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/w-orderTotal.wxss */
+page{
+  background-color: #f1f0f6;
+}
+.hotelOrder{
+  background-color: white;
+  border-radius: 4px;
+  width: 96%;
+  margin: 10px auto 5px auto;
+}
+
+
+.JDMC{
+  margin-left: 10px;
+  height: 36px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  font-weight: block;
+  line-height: 36px;
+
+}
+
+.TPFJ{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.TPFJ image{
+  width: 73px;
+  height: 79px;
+  border-radius: 8px;
+}
+.sasdwq{
+  margin-left: 10px;
+  font-size: 14px;
+  color: rgb(109, 106, 106);
+
+}
+.tjfx{
+  margin-bottom: 5px;
+
+}
+.ANDJ{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 0 10px;
+  padding-bottom: 10px;
+
+}
+.JDPJ{
+  width: 25%;
+  border: 1px solid gray;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 9px;
+  border-radius: 6px;
+  /* color: rgba(34, 33, 33, 0.822); */
+
+}

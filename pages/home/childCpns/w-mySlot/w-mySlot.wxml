@@ -1,0 +1,10 @@
+<!--pages/home/childCpns/w-mySlot/w-mySlot.wxml-->
+    <view class="laberItem chooes" for="">
+      <radio-group bindchange="ptCheck" class="cheG">
+        <view class="GT" wx:for="{{GTStudent}}" wx:key="sGTKey"
+          wx:for-index="GTIndex">
+          <view class="GTItem">{{item}}</view>
+          <radio value="{{GTIndex+1}}" checked="true"/>
+        </view>
+      </radio-group>
+    </view>

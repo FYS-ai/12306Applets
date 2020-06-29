@@ -1,0 +1,22 @@
+/* pages/grofile/childCpns/w-ordermang/w-ordermang.wxss */
+.order{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;  
+  border-radius: 4px;
+  background: white;
+  position: relative;
+  top: -13px;
+  height: 66px;
+  align-items: center;
+  
+}
+.orderItem .odImg{
+  width: 30px;
+  height: 30px;
+  
+}

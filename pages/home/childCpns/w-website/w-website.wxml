@@ -1,0 +1,56 @@
+<!-- pages/home/childCpns/w-website/w-website.wxml -->
+<view class="cp">
+  <view class="HCFJ">
+    <view class="huoche {{HFIndex === index ? 'HFactive':''}}" wx:for="{{titles}}" wx:for-index="index" data-index="{{index}}" wx:key="index" bindtap="HCFJClick">
+      {{item}}
+    </view>
+  </view>
+  <view class="fromBD">
+    <form class="">
+      <label class="laberItem" for="">
+        <view class="dizi" bindtap="ksClick" name="kaishi">{{ksItem}}</view>
+        <image class="switch" wx:if="{{isImg}}" bindtap="websiteImgClick1" src="/assets/images/switch/switch.png" />
+        <image class="switch" wx:else bindtap="websiteImgClick2" src="/assets/images/switch/switch.png" />
+        <view class="dizi" bindtap="zdClick" name="dizi">{{zdItem}}</view>
+      </label>
+      <label class="laberItem startRight" for="">
+        <view class="SLR">
+          <view class="mothDay">
+            <input type="text" value="{{startTime}}"
+             bindinput="startTimeInput"
+             bindconfirm="startTimeConform"/>
+            月
+            <input type="text" value="{{startTimeDay}}"
+             bindinput="startTimeDayInput"
+             bindconfirm="startTimeDayConform"/>
+            日
+          </view>
+          <text class="labelRight">></text>
+        </view>
+      </label>
+        <slot></slot>
+      <label for="" class="laberItem CXCPBut">
+        <button class="CXCP" bindtap="CXButClick">查询</button>
+      </label>
+    </form>
+  </view>
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!-- 弹出框 -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}" catch:touchmove>
+    <!-- --------详情布局------------ -->
+    <scroll-view class="scrolly" scroll-y>
+      <view class="text-search">
+        <label class="inputLabel">
+          <icon type="search" size="18" class="search"></icon>
+          <input class="inputText" type="text" value="{{inputText}}" bindfocus="inputFocusClick" bindinput="inputTextClick" bindconfirm="confirmClick" />
+          <icon class="clear" type="clear" size="18" wx:if="{{isIconClear2}}" bindtap="ClearClick"></icon>
+        </label>
+      </view>
+      <view class="format">
+        <view class="formatTimeList" wx:for="{{formatTimeList}}" wx:key="forIndex" bind:tap="formatTimeList" wx:for-index="formatIndex" wx:for-item="formatItem" data-index="{{formatIndex}}" data-item="{{formatItem}}">
+          {{formatItem.name}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

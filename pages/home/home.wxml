@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<view>
+<w-bannerLogon img="{{img}}"/>
+
+<w-website titles="{{titles}}"
+  formatTimeList="{{formatTimeList}}"
+  isIconClear2="{{isIconClear}}"
+  bind:websiteHCFJClick="HCFJClick"
+  bind:websiteksClick="ksClick"
+  bind:websitezdClick="zdClick"
+  bind:websiteImg1="websiteImgClick1"
+  bind:websiteImg2="websiteImgClick2"
+  bind:wClearClick="ClearClick">
+  <w-mySlot binddetailClick="DetailClick"/>
+  </w-website>
+
+<w-application application="{{application}}"
+ applicationTitles="{{applicationTitles}}"/>
+
+</view>
+<!-- <image src="http://tmp/wxc649f9465375bdf3.o6zAJs1UVS5y-hKGeS2p-_GWXfaI.Bd6uXxmuaCSweabe0f2009a22babcc196ab1cc03100d.png"></image> -->

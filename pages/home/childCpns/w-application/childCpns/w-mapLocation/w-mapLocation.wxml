@@ -1,0 +1,7 @@
+<!--pages/home/childCpns/w-application/childCpns/w-mapLocation/w-mapLocation.wxml-->
+<map id="map"
+  longitude="{{DLWZ.longitude}}" 
+  latitude="{{DLWZ.latitude}}" 
+  scale="16"
+  markers="{{markers}}" 
+  style="width:100%;height:600px;"></map>

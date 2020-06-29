@@ -1,0 +1,151 @@
+/* pages/home/childCpns/w-website/w-website.wxss */
+.cp{
+  border:1px solid #eee
+}
+.HCFJ{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  background: rgb(149, 146, 146);
+}
+.huoche{
+  width:40%;
+  height:44px;
+  line-height: 44px;
+  text-align: center;
+  color: white;
+}
+.HFactive{
+  background: white;
+  color: black;
+}
+
+.fromBD{
+  width:90%;
+  margin: 0 auto;
+}
+.laberItem{
+  display: flex;
+  height:60px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+/* 从底部弹出商品详情样式 */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  height: 80vh;
+  width: 100%;
+  /* overflow: hidden; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  /* padding-top: 20rpx; */
+  border-radius: 8rpx 8rpx 0 0;
+}
+/* 详细布局样式 */
+.scrolly{
+  height:80vh;
+}
+
+.text-search{
+  background: #5495E6;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+
+}
+.text-search .search{
+  position: relative;
+  left: 23px;
+  top: 1px;
+  z-index: 2;
+
+}
+.text-search .inputLabel{
+  width: 90%;
+  /* position: relative;
+  left: -10px; */
+  border: 1px solid #ffffff;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+}
+.text-search .inputText{
+  border: 1px solid #ffffff;
+  background: white;
+  width: 70%;
+  margin-left: 35px;
+
+
+}
+.inputLabel .clear{
+  position: relative;
+  left: 21px;
+  z-index: 2;
+}
+.format{
+  margin-top: 10px;
+}
+.formatTimeList{
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid #eee;
+
+}
+.laberItem .dizi{
+  flex: 1;
+}
+.laberItem .switch{
+  width:30px;
+  height: 30px;
+}
+.startRight{
+  justify-content: space-around;
+}
+.SLR{
+  width:72%;
+  display: flex;
+  justify-content: space-between;
+}
+.SLR .mothDay{
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+.CXCPBut{
+  border:none;
+}
+.CXCPBut{
+  position: relative;
+  top: -15px;
+}
+.CXCP{
+  background: #5495E6;
+  color:white;
+  width: 90%;
+  font-size: 17px;
+}

@@ -1,0 +1,45 @@
+<!--pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/w-orderTotal.wxml-->
+<view wx:if="{{detailList!=''}}">
+<view wx:if="{{orderIndexY==0}}">
+  <w-tranOrder detailList="{{detailList}}"/>
+</view>
+
+  <view wx:elif="{{orderIndexY==1}}"> 
+    <block wx:for="{{detailList}}" wx:key="hotelKey"
+      wx:for-index="deLIndex">
+      <view class="hotelOrder">
+        <view class="JDMC">
+          <view>{{item.hotelName}}</view>
+        </view>
+
+        <view class="ZDXX">
+          <view class="TPFJ">
+            <image src="{{item.imgUrl}}"/>
+            <view class="sasdwq">
+              <view class="tjfx">
+                <text>1间</text>，
+                <text>{{item.roomsType}}</text>
+              </view>
+              <view class="tjfx">{{item.checkIn}}-{{item.checkOut}}</view> 
+              <view class="tjfx">总价：￥113.00</view> 
+            </view>
+          </view>
+        </view>
+        <view class="ANDJ">
+          <button class="JDPJ" bindtap="PJClick" data-indexX="{{deLIndex}}"
+            disabled="{{isDisabled[deLIndex]}}">
+            评价</button>
+          <view  class="JDPJ" bindtap="ZCYDClick" data-indexX="{{deLIndex}}">
+            再次预定</view>
+          <view class="JDPJ" bindtap="SCClick" data-indexX="{{deLIndex}}">
+            删除订单</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+<view wx:else>
+  <image src="{{HMDDImg}}" style="width:100%;"/>
+</view>

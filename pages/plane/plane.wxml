@@ -1,0 +1,14 @@
+<!--pages/plane/plane.wxml-->
+<view class="">
+  <w-swiper list="{{img}}" sheight="100px"/>
+
+  <w-website titles="{{titles}}"
+  formatTimeList="{{formatTimeList}}"
+  isIconClear2="{{isIconClear}}"
+  bind:websiteHCFJClick="HCFJClick"
+  bind:websiteksClick="ksClick"
+  bind:websitezdClick="zdClick"
+  bind:websiteImg1="websiteImgClick1"
+  bind:websiteImg2="websiteImgClick2"
+  bind:wClearClick="ClearClick"/>
+</view>

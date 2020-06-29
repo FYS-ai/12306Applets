@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-acman":"./childCpns/w-acman/w-acman",
+    "w-ordermang":"./childCpns/w-ordermang/w-ordermang",
+    "w-service":"./childCpns/w-service/w-service"
+  }
+}

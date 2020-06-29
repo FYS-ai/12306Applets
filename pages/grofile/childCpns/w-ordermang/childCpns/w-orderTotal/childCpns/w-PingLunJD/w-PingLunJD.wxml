@@ -1,0 +1,34 @@
+<!--pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/childCpns/w-PingLunJD/w-PingLunJD.wxml-->
+<view class="PJJML">
+  <view class="PJTitles">
+    <image class="PJIMG" src="{{titleImg}}"/>
+    <view class="PJText">{{roomsType}}</view>
+  </view>
+
+  <view class="neir">
+    <view class="pl">评论</view>
+    <view class="inpText">
+      <textarea class="teip"
+      value="{{newDetValue}}" placeholder="输入评论..." bindinput="texteInput"></textarea>
+    </view>
+    
+    <!-- <scroll-view scroll-x="true" class="scrollNR"> -->
+      <view class="HDTPSSS">
+        <view class="asdaa">
+          <block wx:for="{{bigImg}}" wx:for-index="bigIndex" wx:key="bigImg">
+            <image class="bigImg"  src="{{bigImg[bigIndex]}}"/>
+          </block>
+          <view class="SCTU" bindtap="SCTUClick">
+            <image src="{{iimg}}" style="width: 40px;height: 40px;"/>
+            <view>上传图片</view>
+          </view>
+          <view class="FBQX">
+            <view class="FB DD" bindtap="FBClick">发布</view>
+            <view class="FB QX" bindtap="QXClick">返回</view>
+          </view>
+        </view>
+      </view>
+    <!-- </scroll-view> -->
+  </view>
+ 
+</view>

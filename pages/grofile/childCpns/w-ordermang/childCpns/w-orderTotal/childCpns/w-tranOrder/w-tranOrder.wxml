@@ -1,0 +1,41 @@
+<!--pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/childCpns/w-tranOrder/w-tranOrder.wxml-->
+<block wx:for="{{detailList}}" wx:key="dateKey">
+<view class="detailList">
+  <view class="fcXX">
+    <view class="zjx">
+      <view class="nromal">{{item.arrivalStation}}</view>
+      <view class="blue">{{item.arrivaltime}}</view>
+    </view>
+    <view class="zjx">
+      <view class="nromal cc">{{item.trainNum}}</view>
+      <view class="smal">历时{{item.filtertime}}</view>
+    </view>
+    <view class="zjx">
+      <view class="nromal">{{item.departStation}}</view>
+      <view class="nromal">{{item.departtime}}</view>
+    </view>
+  </view>
+
+  <view class="fcSJ">
+    <view>发车时间：{{item.dateTime}}</view>
+  </view>
+
+  <view class="ppppp">
+    <view class="userNameXX">
+      <view>{{item.userName}}</view>
+      <view class="price">￥{{item.price}}</view>
+    </view>
+    <view class="sasa">
+      <view class="edzpt">
+        <text class="edz">{{item.seatname}}</text>
+        <text class="ptp">{{item.type}}</text>
+      </view>
+      <view class="sxpj">
+        <view class="sc" bindtap="removeOrder" data-id="{{item._id}}">删除</view>
+        <slot></slot>
+      </view>
+    </view>
+
+  </view>
+</view> 
+</block>

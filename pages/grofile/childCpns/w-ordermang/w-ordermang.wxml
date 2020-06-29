@@ -1,0 +1,8 @@
+<!--pages/grofile/childCpns/w-ordermang/w-ordermang.wxml-->
+ <view class="order">
+    <view class="orderItem" wx:for="{{orderImg}}" wx:key="orderKey"
+      wx:for-index="orederIndex" bindtap="orderClick" data-index="{{orederIndex}}">
+      <image class="odImg" src="{{item}}" />
+      <view class="">{{orderTitle[orederIndex]}}</view>
+    </view>
+  </view>

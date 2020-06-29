@@ -1,0 +1,9 @@
+<!--pages/home/childCpns/w-application/w-application.wxml-->
+<view class="applicationItem">
+    <view class="applicationee" wx:for="{{application}}" wx:key="appKey" 
+    wx:for-index="appIndex" bindtap="applicationClick" 
+    data-index="{{appIndex}}">
+      <image class="appImg" src="{{item}}"/>
+      <view class="">{{applicationTitles[appIndex]}}</view>
+    </view>
+</view>

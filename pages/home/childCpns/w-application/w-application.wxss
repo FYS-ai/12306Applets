@@ -1,0 +1,22 @@
+/* pages/home/childCpns/w-application/w-application.wxss */
+.applicationItem{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px auto;
+}
+.applicationee{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 14px;
+}
+.appImg{
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 0 3px 0;
+
+}
