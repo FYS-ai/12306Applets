@@ -59,6 +59,12 @@ Page({
     
     isBackTop:false,
 
+    CXBX:[
+      "铁路旅客人身意外伤害保险条款 (A款)",
+      "铁路旅客人身意外伤害保险 (指定行程) 投保",
+      "铁路旅客人身意外伤害保险 (指定行程) 常见"
+    ],
+
   },
 
   /**
@@ -140,9 +146,6 @@ Page({
           title: '全部应用',
         });
         break;
-    
-      default:
-        break;
     }
   },
   
@@ -186,6 +189,19 @@ Page({
     }
   },
 
+  //--------出行保险事件监听
+  CXClick(e){
+    const cxindex = e.currentTarget.dataset.cxindex
+    wx.navigateTo({
+      url:'./w-travel/w-travel?cxindex='+cxindex
+    })
+    // console.log(e.currentTarget.dataset.cxindex)
+  },
+
+  //全部应用点击事件
+  // appLCTClick1(){
+
+  // },
   onPullDownRefresh: function () {
 
   },

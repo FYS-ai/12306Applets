@@ -1,0 +1,4 @@
+<!--pages/home/childCpns/w-application/childCpns/w-childAppLCT/w-travel/w-travel.wxml-->
+<view wx:if="{{cxindex}}" class="travelItem">
+  <image class="travel" src="{{travel[cxindex]}}"/>
+</view>

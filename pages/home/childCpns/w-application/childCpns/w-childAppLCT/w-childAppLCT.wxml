@@ -46,6 +46,14 @@
     
   </view>
 
+  <view class="RSBX" wx:elif="{{detailItem==5}}">
+    <view class="TK" wx:for="{{CXBX}}" wx:key="CXBXKey"
+      wx:for-index="CXIndex" bindtap="CXClick" data-cxindex="{{CXIndex}}">
+      <text class="TLBX">{{CXBX[CXIndex]}}</text>
+      <text class="BXright">></text>
+    </view>
+  </view>
+
   <view class="" wx:elif="{{detailItem==6}}">
     <w-mapLocation/>
   </view>

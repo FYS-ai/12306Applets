@@ -9,7 +9,8 @@
     "pages/detail/detail",
     "pages/home/childCpns/w-application/childCpns/w-hotelDetail/w-hotelDetail",
     "pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/w-orderTotal",
-    "pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/childCpns/w-PingLunJD/w-PingLunJD"
+    "pages/grofile/childCpns/w-ordermang/childCpns/w-orderTotal/childCpns/w-PingLunJD/w-PingLunJD",
+    "pages/home/childCpns/w-application/childCpns/w-childAppLCT/w-travel/w-travel"
   ],
   "window": {
     "navigationBarBackgroundColor": "#5495E6",

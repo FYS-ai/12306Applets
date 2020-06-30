@@ -1,0 +1,9 @@
+/* pages/home/childCpns/w-application/childCpns/w-childAppLCT/w-travel/w-travel.wxss */
+.travelItem{
+  width: 96%;
+  margin: auto;
+  margin-top: 20px;
+}
+.travel{
+  width: 100%;
+}
