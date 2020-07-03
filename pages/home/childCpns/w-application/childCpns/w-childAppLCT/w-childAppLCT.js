@@ -78,8 +78,9 @@ Page({
         detailItem: data.data,
         formatTimeList:dictionary.formatTime
       })
+      that. _detailItem(that.data.detailItem)
     })
-    that. _detailItem(that.data.detailItem)
+    
     that._getHotel(dataTimes,dataTimees)
     // console.log(that.data.detailItem)
   },
@@ -108,17 +109,18 @@ Page({
     switch (e) {
       case 0:
         wx.setNavigationBarTitle({
-          title: '火车票',
+          title: '火车票'
         });
+        // console.log(0)
         break;
       case 1:
         wx.setNavigationBarTitle({
-          title: '机场巴士',
+          title: '机场巴士'
         });
         break;
       case 2:
         wx.setNavigationBarTitle({
-          title: '酒店',
+          title: '酒店'
         });
         break;
       case 3:

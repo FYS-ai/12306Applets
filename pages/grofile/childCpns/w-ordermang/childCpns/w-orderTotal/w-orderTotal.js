@@ -31,6 +31,7 @@ Page({
           HMDDImg:"/assets/images/HMDD.png"
         })
       }
+      
       switch(that.data.orderIndexY){
         case 0:
           wx.setNavigationBarTitle({

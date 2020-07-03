@@ -55,30 +55,33 @@
     </view>
   </view>
  
-  <view class="PLLB">评论</view>
-  <block wx:for="{{vassessList}}" wx:for-index="vassessIndex"
-    wx:for-item="vassessItem" wx:key="vassessIndex">
-    <view class="PLLBXX">
-      <view class="RWXX">
-        <image class="TX" src="{{vassessItem.avatarUrl}}"/>
-        <view class="UserName">
-          <view class="RM">{{vassessItem.userName}}</view>
-          <view class="SJ">
-            入住-离开 {{vassessItem.checkIn}} - {{vassessItem.checkOut}}
+  <view class="PLLB">评论({{hotelNum}}条)</view>
+  <view wx:if="{{isShoePL}}">
+    <block wx:for="{{vassessList}}" wx:for-index="vassessIndex"
+      wx:for-item="vassessItem" wx:key="vassessIndex">
+      <view class="PLLBXX">
+        <view class="RWXX">
+          <image class="TX" src="{{vassessItem.avatarUrl}}"/>
+          <view class="UserName">
+            <view class="RM">{{vassessItem.userName}}</view>
+            <view class="SJ">
+              入住-离开 {{vassessItem.checkIn}} - {{vassessItem.checkOut}}
+            </view>
           </view>
         </view>
+
+        <view style="margin-top: 10px;">{{vassessItem.aeContent}}</view>
+
+        <view class="TPXX">
+          <block wx:for="{{vassessItem.imgShowUrl}}" wx:for-index="imgIndex"
+            wx:key="imgIndex" wx-for-item="imgShowItem">
+            <image class="TPLBXX" src="{{vassessItem.imgShowUrl[imgIndex]}}"/>
+          </block>
+        </view>
+        <view class="PLSJJ">评论时间：{{vassessItem.aeTimes}}</view>
+
       </view>
-
-      <view style="margin-top: 10px;">{{vassessItem.aeContent}}</view>
-
-      <view class="TPXX">
-        <block wx:for="{{vassessItem.imgShowUrl}}" wx:for-index="imgIndex"
-          wx:key="imgIndex" wx-for-item="imgShowItem">
-          <image class="TPLBXX" src="{{vassessItem.imgShowUrl[imgIndex]}}"/>
-        </block>
-      </view>
-      <view class="PLSJJ">评论时间：{{vassessItem.aeTimes}}</view>
-
-    </view>
-  </block>
+    </block>
+  </view>
+  <view wx:else class="WPL">暂时还没有评论</view>
 </view>

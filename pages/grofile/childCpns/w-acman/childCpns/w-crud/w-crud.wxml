@@ -32,4 +32,5 @@
     </view>
   </view>
 
+  <view class="personalDetail" bindtap="TCClick">退出</view>
 </view>

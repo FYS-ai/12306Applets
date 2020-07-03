@@ -20,7 +20,14 @@ Page({
      title: '个人信息',
    });
   },
-
+  TCClick(){
+    let that = this
+    wx.setStorageSync("userName","")
+    wx.switchTab({
+      url: '/pages/grofile/grofile'
+    })
+    
+  },
   onPullDownRefresh: function () {
 
   },

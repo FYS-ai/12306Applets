@@ -15,7 +15,9 @@ Page({
     dataNum:0,
     roomTypess:[],
     vassessList:[],
-    imgShowUrl:[]
+    imgShowUrl:[],
+    hotelNum:0,
+    isShoePL:false,
   },
 
   onLoad: function (options) {
@@ -32,10 +34,14 @@ Page({
         const newShowUrl = res.data.map(item=>{
           return item.imgShowUrl
         })
+        if (res.data != "") {
           that.setData({
+            isShoePL: true,
             vassessList:res.data,
-            imgShowUrl:newShowUrl
-          }) 
+            imgShowUrl:newShowUrl,
+            hotelNum:res.data.length
+          })
+        }
       }
     })
   },
@@ -49,6 +55,9 @@ Page({
       this.setData({
        hotelDetailList:hotelDetailList,
         roomTypess:res.data.data.roomTypes
+      })
+      wx.setNavigationBarTitle({
+        title: hotelDetailList.hotelName,
       })
       // console.log("roomTypes:===> ",res.data.data.roomTypes)
       

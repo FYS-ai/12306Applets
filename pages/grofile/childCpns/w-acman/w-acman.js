@@ -88,6 +88,16 @@ Component({
       })
     }
   },
+  pageLifetimes: {
+    show: function () {
+      const newUserName = wx.getStorageSync("userName")
+      if (newUserName == "") {
+        this.setData({
+          isLogin: true
+        })
+      }
+    },
+  },
   lifetimes:{
     attached(){
       let that = this

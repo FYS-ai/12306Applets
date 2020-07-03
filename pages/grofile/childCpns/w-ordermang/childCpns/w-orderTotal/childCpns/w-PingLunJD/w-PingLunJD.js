@@ -82,7 +82,7 @@ Page({
             });
             setTimeout(function () {
               wx.hideLoading()
-            }, 2000)
+            }, 3000)
           }
            
             
